@@ -10,6 +10,8 @@ from textblob import TextBlob
 import contractions
 import src.config as config
 nltk.download('punkt')
+nltk.download('wordnet')
+
 
 from sklearn.feature_extraction.text import CountVectorizer,TfidfVectorizer
 
