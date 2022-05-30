@@ -18,7 +18,8 @@ st.markdown("<h1 align='center'>CMR Lead Conversion Prediction</h1>", unsafe_all
 #https://cdn.technologyadvice.com/wp-content/uploads/2020/02/Optimize-conversion-rate-01.png
 st.sidebar.title("About this application")
 st.sidebar.write("""
-        The app is aimed at predicting the lead conversion rate of a edtech company based on the conversation with candidate and .
+        Understanding customer patterns is one of the important activities in
+        every business. This app is aimed at predicting the lead conversion of a edtech company based on the conversation with candidate and business executive.
         """)
 
 st.sidebar.info("### Made by:    Bhanumathi Ramesh")
