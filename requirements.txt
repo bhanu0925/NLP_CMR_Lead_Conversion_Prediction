@@ -2,7 +2,7 @@ numpy
 pandas
 matplotlib
 seaborn
-sklearn
+sklearn==0.0
 nltk
 spacy
 textblob
