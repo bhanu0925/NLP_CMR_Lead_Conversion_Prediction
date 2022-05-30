@@ -9,6 +9,7 @@ from nltk.tokenize import word_tokenize
 from textblob import TextBlob
 import contractions
 import src.config as config
+nltk.download()
 nltk.download('punkt')
 nltk.download('wordnet')
 
