@@ -10,3 +10,4 @@ imblearn
 contractions
 requests
 streamlit
+wordsegment
