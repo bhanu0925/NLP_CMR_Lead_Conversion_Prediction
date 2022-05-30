@@ -11,7 +11,7 @@ planned in every business process. Goal of the project was to identify the lead 
 Based on location, status and type of business executive identify whether the lead is going to be converted on not.
 ## **App Demo**
 <div align='center'>
-<img src="https://github.com/bhanu0925/NLP_CMR_Lead_Conversion_Prediction/blob/main/CMR.gif">
+<img src="https://github.com/bhanu0925/NLP_CMR_Lead_Conversion_Prediction/blob/main/CMR.GIF">
 </div>
 
 ## **Steps followed**
