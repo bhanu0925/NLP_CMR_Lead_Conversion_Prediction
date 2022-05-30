@@ -15,7 +15,7 @@ def ordinal_encoder(input_val, feats):
     return value
 
 
-def get_prediction(text,location,data,model):
+def get_prediction(text,location,model):
     """
     Predict the class of a given data point.
     """
@@ -27,7 +27,7 @@ def get_prediction(text,location,data,model):
     df_text_tfidf = pd.DataFrame(tfidfVec.transform([text]).todense(),columns=tfidfVec.get_feature_names_out())
     loc_ohe = pd.DataFrame(ohe.transform([[location]]).toarray(),columns=ohe.get_feature_names_out())
     df_test_pred = pd.concat((df_text_tfidf,loc_ohe),axis=1)
-    
+   
     pred = model.predict(df_test_pred)
 
     if pred[0] == 0:
