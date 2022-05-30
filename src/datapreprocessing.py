@@ -8,7 +8,7 @@ from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 from textblob import TextBlob
 import contractions
-import config
+import src.config as config
 nltk.download('punkt')
 
 from sklearn.feature_extraction.text import CountVectorizer,TfidfVectorizer
@@ -89,7 +89,7 @@ def remove_digits_with_words(text):
     return text
 
 
-def expand_shortend(text,shortend_mapping = SHORTEND_MAP):
+def expand_shortend(text,shortend_mapping = config.SHORTEND_MAP):
     """expand shortened words to the actual form.
        e.g. don't -> do not
             tmng  -> timing
@@ -141,7 +141,7 @@ def expand_contractions(text):
     return text
 
 
-def word_segmentation(text,tech_list = tech):
+def word_segmentation(text,tech_list = config.tech):
     
     """expands concatenated words 
        e.g. moredetails -> more details
@@ -223,7 +223,7 @@ def custom_stopword_removal(text,cust_stopwords = config.CUSTOM_STOPWORDS, tech_
     return ' '.join(text_lst)
 
 
-def remove_non_English_words(text,tech_list = tech):
+def remove_non_English_words(text,tech_list = config.tech):
     
     only_english = list(set(nltk.corpus.words.words()))
     text_lst = []

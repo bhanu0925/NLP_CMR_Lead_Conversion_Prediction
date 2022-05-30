@@ -1,14 +1,14 @@
-
-import streamlit as st
-from PIL import Image
-from src.predict import load_model,get_prediction
-import src.config
+from src.predict import get_prediction
+from  src import config
 import numpy as np
-from datapreprocessing import data_cleaning
+from src.datapreprocessing import data_cleaning
+from src.utils import load_model
+
 import warnings
 from sklearn.exceptions import DataConversionWarning
-from src.load_model import get_model
-warnings.filterwarnings(action='ignore', category=DataConversionWarning)
+ 
+import streamlit as st
+#warnings.filterwarnings(action='ignore', category=DataConversionWarning)
 
 st.set_page_config(page_title="CMR Lead Conversion Prediction",             
                 layout="wide")
