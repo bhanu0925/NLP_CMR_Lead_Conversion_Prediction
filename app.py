@@ -39,4 +39,4 @@ if st.button("Predict") :
         pred = get_prediction(text,location ,model)
         st.text(pred)
     else:
-        st.error("Please enter the text")   
+        st.error("Please enter the text")  
