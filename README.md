@@ -23,7 +23,7 @@ Based on location, status and type of business executive identify whether the le
 1. Lower casing the text data
 2. Removal of panctuations
 3. Removing words with digits
-4. EXpanding shortend words
+4. Expanding shortend words
 5. Expanding contractions
 6. word segmentations
 7. Spelling corrections
@@ -44,12 +44,12 @@ Feature engineering is done in two ways and tested
 
 ## **Modelling**
 
--1 Machine learning algorithms like 
+ - Machine learning algorithms like 
  - Logistic Regression algorithm
  - Naive Bayes algorithm
  - Support vector machine
  - Randomforest classification algorithm
- - XXBoost 
+ - XGBoost 
 
  where considered for experimets.
  SVC outperformed with better metrics. This application is using SVC at the backend
